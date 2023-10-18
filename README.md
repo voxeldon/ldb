@@ -11,7 +11,6 @@ The `LDB` class provides an interface for managing Minecraft's scoreboard object
     - [Database Management](#database-management)
     - [Key Management](#key-management)
     - [Array Storage](#array-storage)
-    - [Get entry from an Aray](#get-entry-from-an-aray)
 
 ---
 
@@ -131,12 +130,3 @@ console.warn(uuid);
    ```
 
 ---
-
-### Get entry from an Aray
-```js
-        const allKeys = DB.getAllKeys('test');
-        console.warn(JSON.stringify(allKeys, null, 2));
-        
-        const Steve = allKeys.find(entry => entry.key === "Steve");
-        console.warn(JSON.stringify(Steve));
-```
